@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- BASE:START (managed by Coding Agent — do not edit) -->
+<base href="/smilebright-dental-clinic-bacoor-cavite/">
+<!-- BASE:END -->
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+
+<!-- SEO Meta Tags -->
+<title>SmileBright Dental Clinic — Bacoor, Cavite</title>
+<meta property="og:title" content="SmileBright Dental Clinic — Bacoor, Cavite" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="SmileBright Dental Clinic — Bacoor, Cavite" />
+<!-- End SEO Meta Tags -->
+<script data-lp-token-hydrate>
+(function(){try{
+  var slug="lp-mqq7x8rp-6d9op";
+  var SK='lp_access_'+slug;
+  var map={access_token:'lp_pw_',allowlist_access_token:'lp_al_',pin_access_token:'lp_pin_',paywall_access_token:'lp_paid_'};
+  var u=new URL(location.href);var found=null;var changed=false;
+  Object.keys(map).forEach(function(p){var v=u.searchParams.get(p);if(v){found=v;try{localStorage.setItem(map[p]+slug,v);}catch(e){}u.searchParams.delete(p);changed=true;}});
+  if(found){try{sessionStorage.setItem(SK,found);}catch(e){}}
+  else{try{if(!sessionStorage.getItem(SK)){var t=localStorage.getItem('lp_pw_'+slug)||localStorage.getItem('lp_al_'+slug)||localStorage.getItem('lp_pin_'+slug)||localStorage.getItem('lp_paid_'+slug);if(t)sessionStorage.setItem(SK,t);}}catch(e){}}
+  if(changed){try{history.replaceState(null,'',u.toString());}catch(e){}}
+  function getTok(){try{return sessionStorage.getItem(SK)||localStorage.getItem('lp_pw_'+slug)||localStorage.getItem('lp_al_'+slug)||localStorage.getItem('lp_pin_'+slug)||localStorage.getItem('lp_paid_'+slug);}catch(e){return null;}}
+  function needsToken(url,method){if(!url)return false;var s=String(url);var m=(method||'GET').toUpperCase();var isSheetWrite=(m==='POST'||m==='PATCH'||m==='PUT'||m==='DELETE')&&/\/sheet-rows(\/|$|\?)/.test(s);var isSheetRead=/\/sheet-data(\/|$|\?)/.test(s);var isLlm=/\/api\/landing-pages\/public\/[^/]+\/(llm|llm-config)(\/|$|\?)/.test(s);return isSheetWrite||isSheetRead||isLlm;}
+  if(window.fetch){var _f=window.fetch;window.fetch=function(input,init){try{var url=typeof input==='string'?input:(input&&input.url)||'';var method=(init&&init.method)||(input&&input.method)||'GET';if(needsToken(url,method)){var tok=getTok();if(tok){init=init||{};var h=new Headers(init.headers||(typeof input!=='string'?input.headers:undefined)||{});if(!h.has('X-Landing-Page-Token'))h.set('X-Landing-Page-Token',tok);init.headers=h;}}}catch(e){}return _f.call(this,input,init);};}
+  if(window.XMLHttpRequest){var _o=XMLHttpRequest.prototype.open;var _s=XMLHttpRequest.prototype.send;XMLHttpRequest.prototype.open=function(m,u){this.__lpM=m;this.__lpU=u;return _o.apply(this,arguments);};XMLHttpRequest.prototype.send=function(){try{if(needsToken(this.__lpU,this.__lpM)){var tok=getTok();if(tok)this.setRequestHeader('X-Landing-Page-Token',tok);}}catch(e){}return _s.apply(this,arguments);};}
+}catch(e){}})();
+</script>
+
+<script data-field-replace>
+(function(){
+  var params=new URLSearchParams(window.location.search);
+  var fields={};
+  var paramMap={
+    'first_name':'firstName','last_name':'lastName','full_name':'fullName',
+    'email':'email','phone':'phone','company':'company',
+    'city':'city','state':'state','country':'country'
+  };
+  var skipTags={'SCRIPT':1,'STYLE':1,'NOSCRIPT':1,'TEXTAREA':1,'CODE':1,'PRE':1};
+  var hasUrlFields=false;
+  for(var p in paramMap){
+    var v=params.get(p);
+    if(v){fields[paramMap[p]]=v;hasUrlFields=true;}
+  }
+  var contactId=params.get('contact_id');
+  function esc(s){
+    if(!s)return s;
+    var d=document.createElement('div');
+    d.appendChild(document.createTextNode(s));
+    return d.innerHTML;
+  }
+  function doReplace(data){
+    var r={};
+    r['{{full_name}}']=esc(((data.firstName||'')+' '+(data.lastName||'')).trim()||((data.fullName||data.name)||''));
+    r['{{first_name}}']=esc(data.firstName||(data.name?data.name.split(' ')[0]:'')||'');
+    r['{{last_name}}']=esc(data.lastName||(data.name&&data.name.indexOf(' ')>-1?data.name.substring(data.name.indexOf(' ')+1):'')||'');
+    r['{{email}}']=esc(data.email||'');
+    r['{{phone}}']=esc(data.phone||'');
+    r['{{company}}']=esc(data.company||'');
+    r['{{city}}']=esc(data.city||'');
+    r['{{state}}']=esc(data.state||'');
+    r['{{country}}']=esc(data.country||'');
+    r['{{date}}']=new Date().toLocaleDateString();
+    r['{{time}}']=new Date().toLocaleTimeString();
+    r['{{location}}']=[data.city,data.state,data.country].filter(Boolean).join(', ');
+    r['{{tracking_id}}']=esc(data.trackingId||'');
+    r['{{lastClickedProduct}}']=esc(data.lastClickedProduct||'');
+    r['{{lastProductClickDate}}']=esc(data.lastProductClickDate||'');
+    r['{{lastClickedProductPrice}}']=esc(data.lastClickedProductPrice||'');
+    r['{{lastClickedProductURL}}']=esc(data.lastClickedProductURL||'');
+    r['{{productsClickedCount}}']=esc(data.productsClickedCount||'0');
+    r['{{ip_address}}']=esc(data.ipAddress||'');
+    r['{{ip}}']=esc(data.ipAddress||'');
+    if(data.customFields){
+      for(var k in data.customFields){
+        r['{{'+k+'}}']=esc(String(data.customFields[k]||''));
+      }
+    }
+    params.forEach(function(v,k){
+      if(!paramMap[k]&&k!=='contact_id'&&k!=='page_id'&&k.indexOf('utm_')!==0){
+        r['{{'+k+'}}']=esc(v);
+      }
+    });
+    var hasValues=false;
+    for(var key in r){if(r[key]){hasValues=true;break;}}
+    if(!hasValues)return;
+    var walker=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT,{
+      acceptNode:function(n){
+        var p=n.parentNode;
+        if(p&&skipTags[p.nodeName])return NodeFilter.FILTER_REJECT;
+        return NodeFilter.FILTER_ACCEPT;
+      }
+    });
+    var node;
+    while(node=walker.nextNode()){
+      var txt=node.nodeValue;
+      if(txt&&txt.indexOf('{{')>-1){
+        var changed=txt;
+        for(var ph in r){
+          if(r[ph]&&changed.indexOf(ph)>-1){
+            changed=changed.split(ph).join(r[ph]);
+          }
+        }
+        if(changed!==txt)node.nodeValue=changed;
+      }
+    }
+    var attrs=['value','placeholder','content','alt','title'];
+    attrs.forEach(function(attr){
+      var els=document.querySelectorAll('['+attr+'*="{{"]');
+      for(var i=0;i<els.length;i++){
+        var tag=els[i].tagName;
+        if(skipTags[tag])continue;
+        var val=els[i].getAttribute(attr);
+        if(val){
+          var nv=val;
+          for(var ph in r){
+            if(r[ph]&&nv.indexOf(ph)>-1){
+              nv=nv.split(ph).join(r[ph]);
+            }
+          }
+          if(nv!==val)els[i].setAttribute(attr,nv);
+        }
+      }
+    });
+  }
+  function run(){
+    if(contactId){
+      var xhr=new XMLHttpRequest();
+      xhr.open('GET','https://studio.marcor.app/api/landing/context/'+encodeURIComponent(contactId)+'?page_id=5145');
+      xhr.onload=function(){
+        if(xhr.status===200){
+          try{
+            var resp=JSON.parse(xhr.responseText);
+            if(resp.success&&resp.contact){
+              var merged=resp.contact;
+              for(var k in fields){merged[k]=fields[k];}
+              doReplace(merged);
+              return;
+            }
+          }catch(e){}
+        }
+        if(hasUrlFields)doReplace(fields);
+      };
+      xhr.onerror=function(){if(hasUrlFields)doReplace(fields);};
+      xhr.send();
+    }else if(hasUrlFields){
+      doReplace(fields);
+    }
+  }
+  if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',run);}
+  else{run();}
+})();
+</script>
+<script data-payment>
+(function(){
+  var slug='DcVPHaCaL';
+  var apiBase='https://studio.marcor.app';
+  var successSubtext='';var successBtnLabel='Continue';var successBtnColor='#16a34a';var successRedirect='';
+  function findEmail(){
+    var ids=['email','emailAddress','buyer-email','buyerEmail','user-email','userEmail','checkout-email','customer-email','contact-email'];
+    for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&el.value&&el.value.includes('@'))return el.value.trim();}
+    var inputs=document.querySelectorAll('input[type="email"],input[name*="email"],input[placeholder*="email"],input[placeholder*="Email"]');
+    for(var j=0;j<inputs.length;j++){if(inputs[j].value&&inputs[j].value.includes('@'))return inputs[j].value.trim();}
+    return '';
+  }
+  function findName(){
+    var ids=['name','fullName','full-name','buyer-name','buyerName','customer-name','userName','user-name'];
+    for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&el.value)return el.value.trim();}
+    var inputs=document.querySelectorAll('input[name*="name"]:not([name*="email"]):not([type="email"]),input[placeholder*="name"]:not([placeholder*="email"]):not([type="email"]),input[placeholder*="Name"]:not([type="email"])');
+    for(var j=0;j<inputs.length;j++){if(inputs[j].value)return inputs[j].value.trim();}
+    return '';
+  }
+  function findPhone(){var ids=['phone','phoneNumber','phone-number','tel','telephone','mobile','mobileNumber','cell','contact-phone','buyer-phone'];for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&el.value&&el.value.trim())return el.value.trim();}var inputs=document.querySelectorAll('input[type="tel"],input[name*="phone"],input[name*="tel"],input[name*="mobile"],input[placeholder*="phone"],input[placeholder*="Phone"]');for(var j=0;j<inputs.length;j++){if(inputs[j].value&&inputs[j].value.trim())return inputs[j].value.trim();}return '';}
+  var __realProcessPayment=function(a,b,c,d,e){
+    var amountCents,email,productName,productDescription,customerName,quantity;
+    if(a&&typeof a==='object'){
+      amountCents=a.amountCents;email=a.email;productName=a.productName;
+      productDescription=a.productDescription||'';customerName=a.name||'';quantity=a.quantity||1;
+    }else{
+      amountCents=typeof a==='number'?a:0;productName=typeof b==='string'?b:'';
+      productDescription=typeof c==='string'?c:'';email='';customerName='';quantity=1;
+    }
+    if(!email)email=findEmail();
+    if(!customerName)customerName=findName();
+    var phone=findPhone();
+    if(!productName){alert('Product name is required.');return Promise.reject('no_product_name');}
+    if(!amountCents||amountCents<100){alert('Amount must be at least $1.00');return Promise.reject('invalid_amount');}
+    if(!email){alert('Please enter your email address.');return Promise.reject('no_email');}
+    var successBase=window.location.href.split('?')[0];
+    var __pLoc=(document.documentElement.lang||navigator.language||'en');
+    return fetch(apiBase+'/api/landing-pages/public/'+slug+'/payment/checkout',{
+      method:'POST',headers:{'Content-Type':'application/json'},
+      body:JSON.stringify({email:email,name:customerName,phone:phone||'',amountCents:amountCents,productName:productName,productDescription:productDescription,quantity:quantity,locale:__pLoc,successUrl:successBase+'?payment=success&product='+encodeURIComponent(productName)+'&session_id={CHECKOUT_SESSION_ID}',cancelUrl:successBase+'?payment=cancelled'})
+    }).then(function(r){return r.json();}).then(function(d){
+      if(d.checkoutUrl){window.location.href=d.checkoutUrl;}
+      else{alert(d.error||'Failed to process payment');throw new Error(d.error);}
+    });
+  };
+  Object.defineProperty(window,'__processPayment',{value:__realProcessPayment,writable:false,configurable:false});
+  document.addEventListener('DOMContentLoaded',function(){
+    var urlParams=new URLSearchParams(window.location.search);
+    if(urlParams.get('payment')==='success'){
+      var sidP=urlParams.get('session_id');
+      if(sidP){try{fetch(apiBase+'/api/landing-pages/public/'+slug+'/checkout/confirm',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({sessionId:sidP})}).catch(function(){});}catch(e){}}
+      var pName=urlParams.get('product')||'your item';
+      var overlay=document.createElement('div');overlay.id='payment-success-overlay';
+      overlay.style.cssText='position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.5);display:flex;align-items:center;justify-content:center;z-index:999999;font-family:system-ui,-apple-system,sans-serif;';
+      function esc(s){return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
+      var subTxt=successSubtext||('Thank you for purchasing '+pName+'.');
+      overlay.innerHTML='<div style="background:white;border-radius:16px;padding:40px;max-width:420px;width:90%;text-align:center;box-shadow:0 20px 60px rgba(0,0,0,0.15);"><div style="width:64px;height:64px;border-radius:50%;background:#dcfce7;margin:0 auto 20px;display:flex;align-items:center;justify-content:center;"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div><h2 style="margin:0 0 12px;font-size:24px;font-weight:700;color:#111827;">Payment Successful!</h2><p style="margin:0 0 24px;color:#6b7280;font-size:16px;">'+esc(subTxt)+'</p><button id="lp-pay-success-btn" style="padding:12px 32px;font-size:16px;font-weight:600;background:'+successBtnColor+';color:white;border:none;border-radius:8px;cursor:pointer;">'+esc(successBtnLabel)+'</button></div>';
+      document.body.appendChild(overlay);
+      var pBtn=document.getElementById('lp-pay-success-btn');
+      if(pBtn){pBtn.addEventListener('click',function(){if(successRedirect){window.location.href=successRedirect;}else{overlay.remove();window.history.replaceState({},'',window.location.pathname);}});}
+    }
+  });
+})();
+</script>
+<script data-cart>
+(function(){
+  var slug='DcVPHaCaL';
+  var apiBase='https://studio.marcor.app';
+  var successSubtext='';var successBtnLabel='Continue';var successBtnColor='#16a34a';var successRedirect='';
+  function findCartEmail(){
+    var ids=['email','emailAddress','buyer-email','buyerEmail','user-email','userEmail','checkout-email','customer-email','contact-email'];
+    for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&el.value&&el.value.includes('@'))return el.value.trim();}
+    var inputs=document.querySelectorAll('input[type="email"],input[name*="email"],input[placeholder*="email"],input[placeholder*="Email"]');
+    for(var j=0;j<inputs.length;j++){if(inputs[j].value&&inputs[j].value.includes('@'))return inputs[j].value.trim();}
+    return '';
+  }
+  function findCartName(){
+    var ids=['name','fullName','full-name','buyer-name','buyerName','customer-name','userName','user-name'];
+    for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&el.value)return el.value.trim();}
+    var inputs=document.querySelectorAll('input[name*="name"]:not([name*="email"]):not([type="email"]),input[placeholder*="name"]:not([placeholder*="email"]):not([type="email"]),input[placeholder*="Name"]:not([type="email"])');
+    for(var j=0;j<inputs.length;j++){if(inputs[j].value)return inputs[j].value.trim();}
+    return '';
+  }
+  function findCartPhone(){var ids=['phone','phoneNumber','phone-number','tel','telephone','mobile','mobileNumber','cell','contact-phone','buyer-phone'];for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&el.value&&el.value.trim())return el.value.trim();}var inputs=document.querySelectorAll('input[type="tel"],input[name*="phone"],input[name*="tel"],input[name*="mobile"],input[placeholder*="phone"],input[placeholder*="Phone"]');for(var j=0;j<inputs.length;j++){if(inputs[j].value&&inputs[j].value.trim())return inputs[j].value.trim();}return '';}
+  var __realCart=function(arg){
+    var items, email='', customerName='', successUrl, cancelUrl, currency;
+    if(Array.isArray(arg)){items=arg;}
+    else if(arg&&typeof arg==='object'){
+      items=arg.items;email=arg.email||'';customerName=arg.name||arg.customerName||'';
+      successUrl=arg.successUrl;cancelUrl=arg.cancelUrl;currency=arg.currency;
+    }
+    if(!Array.isArray(items)||items.length===0){alert('No items in cart.');return Promise.reject('no_items');}
+    var cleanItems=[];var totalCents=0;
+    for(var i=0;i<items.length;i++){
+      var it=items[i];if(!it||typeof it!=='object'){alert('Invalid item at position '+i);return Promise.reject('bad_item');}
+      var nm=typeof it.name==='string'?it.name.trim():'';
+      if(!nm){alert('Item '+(i+1)+' is missing a name.');return Promise.reject('no_name');}
+      var amt=typeof it.amountCents==='number'?it.amountCents:(typeof it.amount==='number'?Math.round(it.amount*100):NaN);
+      if(!isFinite(amt)||amt<1){alert('Item "'+nm+'" needs a valid amount in cents.');return Promise.reject('bad_amount');}
+      var qty=(typeof it.quantity==='number'&&it.quantity>0)?Math.floor(it.quantity):1;
+      cleanItems.push({name:nm,description:it.description||'',amountCents:amt,quantity:qty});
+      totalCents+=amt*qty;
+    }
+    if(totalCents<50){alert('Cart total must be at least $0.50');return Promise.reject('total_too_low');}
+    if(!email)email=findCartEmail();
+    if(!customerName)customerName=findCartName();
+    var cartPhone=findCartPhone();
+    if(!email){var p=window.prompt('Enter your email for the receipt:','');if(p&&p.indexOf('@')>-1){email=p.trim();}else{alert('An email address is required to complete checkout.');return Promise.reject('no_email');}}
+    var successBase=window.location.href.split('?')[0];
+    var body={email:email,name:customerName,items:cleanItems,locale:(document.documentElement.lang||navigator.language||'en')};
+    if(currency)body.currency=currency;
+    if(cartPhone)body.phone=cartPhone;
+    body.successUrl=successUrl||(successBase+'?cart=success&email='+encodeURIComponent(email)+'&session_id={CHECKOUT_SESSION_ID}');
+    body.cancelUrl=cancelUrl||(successBase+'?cart=cancelled');
+    return fetch(apiBase+'/api/landing-pages/public/'+slug+'/cart/checkout',{
+      method:'POST',headers:{'Content-Type':'application/json'},
+      body:JSON.stringify(body)
+    }).then(function(r){return r.json();}).then(function(d){
+      if(d.checkoutUrl){window.location.href=d.checkoutUrl;}
+      else{alert(d.error||'Failed to process checkout');throw new Error(d.error);}
+    });
+  };
+  try{Object.defineProperty(window,'__processCart',{value:__realCart,writable:false,configurable:false});}catch(e){window.__processCart=__realCart;}
+  document.addEventListener('DOMContentLoaded',function(){
+    var urlParams=new URLSearchParams(window.location.search);
+    if(urlParams.get('cart')==='success'){
+      var sidC=urlParams.get('session_id');
+      if(sidC){try{fetch(apiBase+'/api/landing-pages/public/'+slug+'/checkout/confirm',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({sessionId:sidC})}).catch(function(){});}catch(e){}}
+      if(document.getElementById('payment-success-overlay')||document.getElementById('donation-success-overlay')||document.getElementById('cart-success-overlay'))return;
+      var overlay=document.createElement('div');overlay.id='cart-success-overlay';
+      overlay.style.cssText='position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.5);display:flex;align-items:center;justify-content:center;z-index:999999;font-family:system-ui,-apple-system,sans-serif;';
+      function esc(s){return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
+      var subTxt=successSubtext||'Thank you for your order.';
+      overlay.innerHTML='<div style="background:white;border-radius:16px;padding:40px;max-width:420px;width:90%;text-align:center;box-shadow:0 20px 60px rgba(0,0,0,0.15);"><div style="width:64px;height:64px;border-radius:50%;background:#dcfce7;margin:0 auto 20px;display:flex;align-items:center;justify-content:center;"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div><h2 style="margin:0 0 12px;font-size:24px;font-weight:700;color:#111827;">Order Confirmed!</h2><p style="margin:0 0 24px;color:#6b7280;font-size:16px;">'+esc(subTxt)+'</p><button id="lp-cart-success-btn" style="padding:12px 32px;font-size:16px;font-weight:600;background:'+successBtnColor+';color:white;border:none;border-radius:8px;cursor:pointer;">'+esc(successBtnLabel)+'</button></div>';
+      document.body.appendChild(overlay);
+      var cBtn=document.getElementById('lp-cart-success-btn');
+      if(cBtn){cBtn.addEventListener('click',function(){if(successRedirect){window.location.href=successRedirect;}else{overlay.remove();window.history.replaceState({},'',window.location.pathname);}});}
+    }
+  });
+})();
+</script>
+<script src="https://studio.marcor.app/widget.js" data-widget="41289223" async></script>  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav data-section="navbar">
+  <a class="nav-logo" href="#">
+    <div class="nav-logo-icon">🦷</div>
+    <div><span class="nav-logo-text">SmileBright</span><span class="nav-logo-sub">Bacoor, Cavite</span></div>
+  </a>
+  <div class="nav-links">
+    <a href="#services">Services</a>
+    <a href="#why">Why Us</a>
+    <a href="#how">Process</a>
+    <button class="nav-cta" style="background: #C9A94A; color: var(--navy) !important;" onclick="openChat()">Book Inquiry</button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="home" data-section="hero">
+  <div class="hero-inner">
+    <div>
+      <div class="hero-eyebrow"><div class="hero-eyebrow-line"></div><span class="hero-eyebrow-text">Dental Excellence · Bacoor, Cavite</span></div>
+      <h1 class="hero-title">Your smile deserves<br><em>expert care,</em><br>close to home.</h1>
+      <p class="hero-subtitle">Premium dental services for the whole family — from routine cleaning to full orthodontic care — right here in Bacoor, Cavite.</p>
+      <div class="hero-actions">
+        <button class="btn-primary" onclick="openChat()">💬 Book a Free Consultation</button>
+        <a href="#services" class="btn-outline"><span>View Services</span><span style="font-size:16px;">↓</span></a>
+      </div>
+      <div class="hero-trust">
+        <div class="hero-trust-item"><div class="hero-trust-dot"></div><span class="hero-trust-text">Mon – Sat, 9AM – 6PM</span></div>
+        <div class="hero-trust-item"><div class="hero-trust-dot"></div><span class="hero-trust-text">No price pressure</span></div>
+        <div class="hero-trust-item"><div class="hero-trust-dot"></div><span class="hero-trust-text">Family-friendly</span></div>
+      </div>
+    </div>
+    <div>
+      <div class="hero-card">
+        <div class="hero-card-header">
+          <div class="hero-card-avatar">🦷</div>
+          <div><div class="hero-card-name">Smile — Virtual Receptionist</div><div class="hero-card-role">SmileBright Dental · AI-Powered · 24/7</div></div>
+          <div style="margin-left:auto; width:8px; height:8px; border-radius:50%; background:#22c55e; flex-shrink:0;"></div>
+        </div>
+        <div class="hero-card-msg"><p>Hi! 👋 Welcome to SmileBright! Anong dental service ang interesado kayo? I'll connect you with our coordinator for a personalized quote. 😊</p></div>
+        <div class="hero-card-chips">
+          <button class="hero-card-chip" onclick="openChat()">Teeth Cleaning</button>
+          <button class="hero-card-chip" onclick="openChat()">Braces</button>
+          <button class="hero-card-chip" onclick="openChat()">Implants</button>
+          <button class="hero-card-chip" onclick="openChat()">Whitening</button>
+          <button class="hero-card-chip" onclick="openChat()">Kids Dentistry</button>
+        </div>
+        <div class="hero-card-input-row">
+          <input class="hero-card-input" placeholder="Click to chat with Smile..." readonly onclick="openChat()" />
+          <button class="hero-card-send" onclick="openChat()">→</button>
+        </div>
+        <div class="hero-card-stats">
+          <div><div class="hero-card-stat-val">500+</div><div class="hero-card-stat-label">Patients Served</div></div>
+          <div><div class="hero-card-stat-val">12+</div><div class="hero-card-stat-label">Services</div></div>
+          <div><div class="hero-card-stat-val">24h</div><div class="hero-card-stat-label">Quote Response</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="services" id="services" data-section="services">
+  <div class="section-inner">
+    <div class="reveal">
+      <div class="section-eyebrow"><div class="section-eyebrow-line"></div><span class="section-eyebrow-text">What We Offer</span></div>
+      <h2 class="section-title">Comprehensive dental care<br><em>for every need</em></h2>
+      <p class="section-sub">From your first cleaning to a complete smile transformation — we handle it all in one clinic, right here in Bacoor.</p>
+    </div>
+    <div class="services-grid">
+      <div class="service-card reveal" onclick="openChat()"><div class="service-icon">🪥</div><div class="service-name">Teeth Cleaning</div><div class="service-desc">Professional prophylaxis to remove plaque, tartar, and stains. Recommended every 6 months.</div><span class="service-tag">Most Popular</span></div>
+      <div class="service-card reveal" onclick="openChat()"><div class="service-icon">😁</div><div class="service-name">Orthodontics / Braces</div><div class="service-desc">Metal, ceramic, and clear aligner options for children and adults. Personalized treatment plans.</div><span class="service-tag">High Demand</span></div>
+      <div class="service-card reveal" onclick="openChat()"><div class="service-icon">✨</div><div class="service-name">Teeth Whitening</div><div class="service-desc">Professional bleaching for visibly brighter teeth — in-clinic or take-home kit options available.</div><span class="service-tag">Aesthetic</span></div>
+      <div class="service-card reveal" onclick="openChat()"><div class="service-icon">🦷</div><div class="service-name">Dental Implants</div><div class="service-desc">Permanent tooth replacement that looks, feels, and functions exactly like your natural teeth.</div><span class="service-tag">Premium</span></div>
+      <div class="service-card reveal" onclick="openChat()"><div class="service-icon">👶</div><div class="service-name">Pedia Dentistry</div><div class="service-desc">Gentle, child-friendly dental care in a warm environment. We make kids love the dentist.</div><span class="service-tag">Family</span></div>
+      <div class="service-card reveal" onclick="openChat()"><div class="service-icon">💎</div><div class="service-name">Veneers &amp; Crowns</div><div class="service-desc">Porcelain veneers, crowns, and bridges for a complete aesthetic and functional restoration.</div><span class="service-tag">Restorative</span></div>
+      <div class="service-card reveal" onclick="openChat()"><div class="service-icon">🩹</div><div class="service-name">Tooth Extraction</div><div class="service-desc">Safe, gentle extractions including wisdom teeth removal with minimal discomfort.</div><span class="service-tag">General</span></div>
+      <div class="service-card reveal" onclick="openChat()"><div class="service-icon">🔬</div><div class="service-name">Root Canal</div><div class="service-desc">Save your natural tooth with modern endodontic treatment. Painless, efficient, and precise.</div><span class="service-tag">Specialized</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY US -->
+<section class="why" id="why" data-section="section-1">
+  <div class="section-inner">
+    <div class="why-grid">
+      <div>
+        <div class="reveal">
+          <div class="section-eyebrow"><div class="section-eyebrow-line"></div><span class="section-eyebrow-text">Why SmileBright</span></div>
+          <h2 class="section-title">The clinic that treats you<br><em>like family</em></h2>
+          <p class="section-sub">We built SmileBright for families in Bacoor and Cavite who deserve world-class dental care without the Metro Manila traffic.</p>
+        </div>
+        <div class="why-list" style="margin-top: 40px;">
+          <div class="why-item reveal"><div class="why-num">01</div><div><div class="why-content-title">Transparent, no-pressure pricing</div><div class="why-content-text">We never quote you on the spot. Our coordinator sends a personalized, itemized quote so you can decide without pressure.</div></div></div>
+          <div class="why-item reveal"><div class="why-num">02</div><div><div class="why-content-title">Complete family care under one roof</div><div class="why-content-text">From toddlers to seniors — we handle the whole family's dental needs in one place, saving you time and travel.</div></div></div>
+          <div class="why-item reveal"><div class="why-num">03</div><div><div class="why-content-title">AI-powered inquiry system</div><div class="why-content-text">Our 24/7 virtual receptionist captures your inquiry instantly — our team responds with a quote within 24 hours.</div></div></div>
+          <div class="why-item reveal"><div class="why-num">04</div><div><div class="why-content-title">Right here in Bacoor</div><div class="why-content-text">No need to go to Manila. Premium dental care, locally. Easy access, less travel, more savings.</div></div></div>
+        </div>
+      </div>
+      <div class="reveal">
+        <div class="why-image">
+          <div class="why-stat-row">
+            <div class="why-stat"><div class="why-stat-val">500+</div><div class="why-stat-label">Happy patients</div></div>
+            <div class="why-stat"><div class="why-stat-val">12+</div><div class="why-stat-label">Dental services</div></div>
+          </div>
+          <div class="why-stat-row">
+            <div class="why-stat"><div class="why-stat-val">24h</div><div class="why-stat-label">Quote turnaround</div></div>
+            <div class="why-stat"><div class="why-stat-val">6days</div><div class="why-stat-label">Open per week</div></div>
+          </div>
+          <div class="why-testimonial">
+            <div class="why-testimonial-text">"Grabi ang ganda ng experience sa SmileBright. Yung coordinator super helpful, walang pressure sa pricing. Nagpaka-braces kami ng buong pamilya dito!"</div>
+            <div class="why-testimonial-author">— Maria S., Bacoor Cavite · Returning Patient</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="how" id="how" data-section="section-2">
+  <div class="section-inner">
+    <div style="text-align: center;" class="reveal">
+      <div class="section-eyebrow" style="justify-content: center;"><div class="section-eyebrow-line"></div><span class="section-eyebrow-text">How It Works</span><div class="section-eyebrow-line"></div></div>
+      <h2 class="section-title" style="text-align: center;">Simple, stress-free<br><em>from inquiry to chair</em></h2>
+      <p class="section-sub" style="margin: 0 auto; text-align: center;">No long forms. No confusing price lists. Just chat with Smile, and we take care of the rest.</p>
+    </div>
+    <div class="how-steps" style="margin-top: 64px;">
+      <div class="how-step reveal"><div class="how-step-num">1</div><div class="how-step-title">Chat with Smile</div><div class="how-step-text">Tell our AI receptionist what dental service you need — anytime, 24/7.</div></div>
+      <div class="how-step reveal"><div class="how-step-num">2</div><div class="how-step-title">We capture your details</div><div class="how-step-text">Name, contact, preferred schedule, and concerns — all noted automatically.</div></div>
+      <div class="how-step reveal"><div class="how-step-num">3</div><div class="how-step-title">Quote sent to you</div><div class="how-step-text">Our coordinator sends a personalized quotation to your email within 24 hours.</div></div>
+      <div class="how-step reveal"><div class="how-step-num">4</div><div class="how-step-title">Book your appointment</div><div class="how-step-text">Confirm your schedule, come in, and leave with a healthier, brighter smile.</div></div>
+    </div>
+    <div style="text-align:center; margin-top: 48px;">
+      <button class="btn-primary" onclick="openChat()" style="font-size: 15px; padding: 16px 40px;">💬 Start Chatting with Smile</button>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section" id="contact" data-section="contact">
+  <div class="cta-inner reveal">
+    <div style="font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--gold); margin-bottom: 16px; font-weight: 500;">Start Your Journey</div>
+    <h2 class="cta-title">Ready for a <em>brighter smile?</em><br>Let's talk.</h2>
+    <p class="cta-sub">Send us your inquiry and our coordinator will reach out with a personalized quotation — no commitment needed, no price pressure, just care.</p>
+    <button class="btn-primary" onclick="openChat()" style="font-size: 15px; padding: 16px 40px;">💬 Chat with Smile Now</button>
+    <div class="cta-note" style="margin-top: 16px;">Free consultation · No pressure · Quote within 24 hours</div>
+    <div class="cta-contact-options">
+      <div class="cta-contact-item"><div class="cta-contact-icon">📍</div><div><div class="cta-contact-label">Location</div><div class="cta-contact-val">Bacoor, Cavite</div></div></div>
+      <div class="cta-contact-item"><div class="cta-contact-icon">🕐</div><div><div class="cta-contact-label">Hours</div><div class="cta-contact-val">Mon–Sat, 9AM–6PM</div></div></div>
+      <div class="cta-contact-item"><div class="cta-contact-icon">⚡</div><div><div class="cta-contact-label">Response time</div><div class="cta-contact-val">Within 24 hours</div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer data-section="footer">
+  <div><div class="footer-logo">SmileBright <span class="footer-gold">·</span> Dental Clinic</div><div class="footer-sub">Bacoor, Cavite · Premium dental care for your family</div></div>
+  <div class="footer-right"><div>Mon–Sat · 9AM–6PM</div><div style="margin-top: 4px;">Powered by <span class="footer-gold">Marcor AI</span></div></div>
+</footer>
+
+<!-- MARCOR WIDGET EMBED — Widget ID 58406463 (Smile) -->
+<!-- This script renders the official Marcor floating bubble and chat panel -->
+<script src="https://studio.marcor.app/widget.js" data-widget="58406463" async></script>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
