@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://metalearnhub.github.io/smilebright-dental-clinic-bacoor-cavite/sitemap.xml
